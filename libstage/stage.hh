@@ -2258,6 +2258,7 @@ namespace Stg
     void PushFlag( Flag* flag );
     Flag* PopFlag();
 	
+    const std::list<Flag*>& GetFlagList() {return flag_list;}
     unsigned int GetFlagCount() const { return flag_list.size(); }
     
     /** Disable the model. Its pose will not change due to velocity
